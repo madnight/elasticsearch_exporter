@@ -20,7 +20,8 @@ docker run --rm -p 9114:9114 quay.io/prometheuscommunity/elasticsearch-exporter:
 Example `docker-compose.yml`:
 
 ```yaml
-elasticsearch_exporter:
+services:
+  elasticsearch_exporter:
     image: quay.io/prometheuscommunity/elasticsearch-exporter:latest
     command:
      - '--es.uri=http://elasticsearch:9200'
